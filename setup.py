@@ -3,9 +3,9 @@
 from setuptools import setup
 
 setup(name='tap-slack',
-      version='0.4.3',
-      description='Singer.io tap for extracting data from the Slack API',
-      author='RIch Clark',
+      version='0.0.1',
+      description='Unofficial Singer.io tap for extracting data from the Slack API',
+      author='Rich Clark',
       url='',
       classifiers=['Programming Language :: Python :: 3 :: Only'],
       py_modules=['tap_slack'],

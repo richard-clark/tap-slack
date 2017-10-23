@@ -47,7 +47,11 @@ class Method(object):
     def __init__(self):
         self.params = {}
 
-    # TODO: implement retry
+    @backoff.on_exception(backoff.expo,
+                          (requests.exceptions.RequestException),
+                          max_tries=5,
+                          giveup=lambda e: e.response is not None and 400 <= e.response.status_code < 500,
+                          factor=2)
     def request(self):
         url = "https://slack.com/api/{}".format(self.endpoint)
         params = {
@@ -298,16 +302,14 @@ class UsersMethod(Method):
         return additional_requests
 
 def do_sync():
-    LOGGER.info("Authenticating")
-    LOGGER.info(CONFIG)
-
-    queue = []
-    queue.append(ChannelsMethod())
-    queue.append(EmojiMethod())
-    queue.append(FilesMethod())
-    queue.append(TeamInfoMethod())
-    queue.append(UserGroupsMethod())
-    queue.append(UsersMethod())
+    queue = [
+        ChannelsMethod(),
+        EmojiMethod(),
+        FilesMethod(),
+        TeamInfoMethod(),
+        UserGroupsMethod(),
+        UsersMethod()
+    ]
 
     while len(queue) > 0:
         method = queue.pop()
