@@ -1,0 +1,23 @@
+{
+  "properties": {
+    "channelId": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "ts": {
+      "type": "number"
+    },
+    "type": {
+      "type": "string"
+    },
+    "user": {
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

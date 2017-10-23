@@ -1,0 +1,14 @@
+{
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "url": {
+            "type": "string"
+        }
+    },
+    "type": "object"
+}

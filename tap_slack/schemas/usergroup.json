@@ -1,0 +1,67 @@
+{
+    "properties": {
+        "auto_type": {
+            "type": "string"
+        },
+        "created_by": {
+            "type": "string"
+        },
+        "date_create": {
+            "type": "integer"
+        },
+        "date_delete": {
+            "type": "integer"
+        },
+        "date_update": {
+            "type": "integer"
+        },
+        "deleted_by": {
+            "type": "null"
+        },
+        "description": {
+            "type": "string"
+        },
+        "handle": {
+            "type": "string"
+        },
+        "id": {
+            "type": "string"
+        },
+        "is_external": {
+            "type": "boolean"
+        },
+        "is_usergroup": {
+            "type": "boolean"
+        },
+        "name": {
+            "type": "string"
+        },
+        "prefs": {
+            "properties": {
+                "channels": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "groups": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                }
+            },
+            "type": "object"
+        },
+        "team_id": {
+            "type": "string"
+        },
+        "updated_by": {
+            "type": "string"
+        },
+        "user_count": {
+            "type": "string"
+        }
+    },
+    "type": "object"
+}

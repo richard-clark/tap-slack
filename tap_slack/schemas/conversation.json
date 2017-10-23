@@ -1,0 +1,131 @@
+{
+    "properties": {
+        "created": {
+            "type": "integer"
+        },
+        "creator": {
+            "type": "string"
+        },
+        "id": {
+            "type": "string"
+        },
+        "is_archived": {
+            "type": "boolean"
+        },
+        "is_channel": {
+            "type": "boolean"
+        },
+        "is_ext_shared": {
+            "type": "boolean"
+        },
+        "is_general": {
+            "type": "boolean"
+        },
+        "is_group": {
+            "type": "boolean"
+        },
+        "is_im": {
+            "type": "boolean"
+        },
+        "is_member": {
+            "type": "boolean"
+        },
+        "is_mpim": {
+            "type": "boolean"
+        },
+        "is_open": {
+            "type": "boolean"
+        },
+        "is_org_shared": {
+            "type": "boolean"
+        },
+        "is_pending_ext_shared": {
+            "type": "boolean"
+        },
+        "is_private": {
+            "type": "boolean"
+        },
+        "is_shared": {
+            "type": "boolean"
+        },
+        "last_read": {
+            "type": "string"
+        },
+        "latest": {
+            "oneOf": [
+              {"type": "null"},
+              {
+                "properties": {
+                    "text": {
+                        "type": "string"
+                    },
+                    "ts": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "user": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+              }
+            ]
+        },
+        "members": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "name": {
+            "type": "string"
+        },
+        "name_normalized": {
+            "type": "string"
+        },
+        "pending_shared": {
+            "items": {},
+            "type": "array"
+        },
+        "purpose": {
+            "properties": {
+                "creator": {
+                    "type": "string"
+                },
+                "last_set": {
+                    "type": "integer"
+                },
+                "value": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "topic": {
+            "properties": {
+                "creator": {
+                    "type": "string"
+                },
+                "last_set": {
+                    "type": "integer"
+                },
+                "value": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "unlinked": {
+            "type": "integer"
+        },
+        "unread_count": {
+            "type": "integer"
+        },
+        "unread_count_display": {
+            "type": "integer"
+        }
+    },
+    "type": "object"
+}

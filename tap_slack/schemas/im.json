@@ -1,0 +1,23 @@
+{
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "created": {
+            "type": "integer"
+        },
+        "is_im": {
+            "type": "boolean"
+        },
+        "is_org_shared": {
+            "type": "boolean"
+        },
+        "user": {
+            "type": "string"
+        },
+        "is_org_shared": {
+            "type": "boolean"
+        }
+    },
+    "type": "object"
+}

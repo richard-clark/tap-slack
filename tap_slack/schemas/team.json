@@ -1,0 +1,46 @@
+{
+    "properties": {
+        "domain": {
+            "type": "string"
+        },
+        "email_domain": {
+            "type": "string"
+        },
+        "icon": {
+            "properties": {
+                "image_102": {
+                    "type": "string"
+                },
+                "image_132": {
+                    "type": "string"
+                },
+                "image_230": {
+                    "type": "string"
+                },
+                "image_34": {
+                    "type": "string"
+                },
+                "image_44": {
+                    "type": "string"
+                },
+                "image_68": {
+                    "type": "string"
+                },
+                "image_88": {
+                    "type": "string"
+                },
+                "image_original": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "id": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        }
+    },
+    "type": "object"
+}
